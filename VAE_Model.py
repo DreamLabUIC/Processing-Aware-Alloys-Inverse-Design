@@ -792,7 +792,7 @@ def refine_composition(composition_tensor, threshold=1e-5):
 def greedy_decode_reconstruction(model, latent_memory, source_mask, use_gpu=False):
 
     start_token = 0
-    max_steps = 125
+    max_steps = 126
 
     current_tokens = torch.ones(latent_memory.shape[0], 1).fill_(start_token).long()
     full_sequence = torch.ones(latent_memory.shape[0], max_steps + 1).fill_(start_token).long()
@@ -837,7 +837,7 @@ def greedy_decode_reconstruction(model, latent_memory, source_mask, use_gpu=Fals
 def greedy_decode_inference(model, latent_memory, source_mask=None, use_gpu=False):
 
     start_token = 0
-    max_steps = 125
+    max_steps = 126
     source_length = 126
 
     current_tokens = torch.ones(latent_memory.shape[0], 1).fill_(start_token).long()
