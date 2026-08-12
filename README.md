@@ -1,4 +1,4 @@
-# Processing-Aware Generative Inverse Design of Fe-Based Alloys — Code
+# Processing-Aware Generative Inverse Design of Steels from Strength and Hardness Targets — Code
 
 This repository contains the code used in the paper "Processing-Aware Generative Inverse Design of Fe-Based Alloys". The code implements a shared-attributed VAE and a diffusion/denoising model that operate in a learned latent space to perform inverse design for Fe-based alloys.
 
